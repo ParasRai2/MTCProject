@@ -18,13 +18,13 @@
   <!-- owl Carousel -->
   <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
-
   <link href="assets/css/custom.css" rel="stylesheet">
+  <link href="assets/css/magnum-custom.css" rel="stylesheet">
 </head>
 <body>
   <!-- navigation bar start-->
-  <nav class="mb-1 navbar navbar-expand-lg navbar-dark secondary-color lighten-1">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="mb-1 navbar navbar-expand-lg avbar-light white double-nav scrolling-navbar">
+    <img src="assets/images/logo_square.png" alt="" style="height:50px; padding-right:20px;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-5" aria-controls="navbarSupportedContent-5" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,26 +36,20 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link waves-effect waves-light" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-effect waves-light" href="#">Pricing</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown
-          </a>
-          <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-5">
-            <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
-            <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
-            <a class="dropdown-item waves-effect waves-light" href="#">Something else here</a>
-          </div>
+          <span class="nav-link waves-effect waves-light">Attempted: <spab>0/100</spab></span>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto nav-flex-icons">
         <li class="nav-item">
-          <a class="nav-link waves-effect waves-light">1
-            <i class="fas fa-envelope"></i>
+          <button type="button" class="btn btn-success btn-md waves-effect waves-light">Timer is here</button>
           </a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-success btn-md waves-effect waves-light">Submit</button>
+          </a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-danger btn-md waves-effect waves-light">Give-Up</button>
         </li>
         <li class="nav-item avatar dropdown">
           <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
