@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome | Wait for Sometime</title>
+	<title>Welcome | Candidate Info</title>
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 	<!-- Bootstrap core CSS -->
@@ -19,37 +19,66 @@
 	<link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
 	<link href="assets/css/custom.css" rel="stylesheet">
 	<link href="assets/css/magnum-custom.css" rel="stylesheet">
-
 	<!-- My Css -->
-
 	<link href="assets/css/par-css/par.css" rel="stylesheet">
-
-	
 	<link href="assets/css/magnum-custom.css" rel="stylesheet">
-	
-	<!--Clock-->
-	<link rel="stylesheet" href="compiled/flipclock.css">
-
-
-
 </head>
 <body class="container-fluid" id="Login-Page">
 
 	<div class="container-fluid text-center Information">
-
 			<img src="assets/images/mercury_logo.svg" height="120"><br>
-			ENTRANCE EXAMINATION<br>
-			Count Down
-		
+			STUDENT INFORMATION
 	</div>
-	<div class="container" style="padding-left: 29.75%;">
-		
-		<div class="clock" style="margin:2em;"></div>
+	<div class="container-fluid mt-3">
+		<div class="col-10 offset-1">
+			<div class="card student-info">
+					<h4 class="card-header purple-bg white-text text-center py-4">
+						<strong>Candidate Info</strong>
+					</h4>
+					<!--Card content-->
+					<div class="card-body px-lg-5 mt-1">
+						<div class="container-fluid row">
+							<div class="col-7">
+								<h5 class="form-text-color">
+									User Name : Pradeep Bahadur Dahal
+								</h5>
+							</div>
+							<div class="col-5 text-center">
+								<h5 class="form-text-color">
+									Test Status
+								</h5>
+								<div class="container-fluid text-center">
+									<span class="status ml-1 mr-1 pl-2 pr-2 active"> Available </span>
+									<span class="status ml-1 mr-1 pl-2 pr-2 inactive"> Unavailable</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="container-fluid row mt-3">
+							<div class="col-7">
+								<h5 class="form-text-color">
+									Time Duration : 1 hour<br>
+									No. of Questions: 50
+								</h5>
+							</div>
+							<div class="col-5 text-center">
+								<h5 class="form-text-color" style="font-size: 12px;">
+									Click Start to start examination when it is available
+								</h5>
+							</div>
+						</div>
+						<div class="container-fluid">
+							<button class="float-right btn btn-purple-color btn-rounded z-depth-0 my-4 waves-effect">Start</button>
+						</div>
+					</div>
+
+				</div>
+		</div>
+
 	</div>
 
-	<div class="container-fluid text-center Information" id="Login-Info">
-			Good Luck
-	</div>
+
+
 
 	<!-- JQuery -->
 	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
@@ -59,18 +88,9 @@
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<!-- MDB core JavaScript -->
 	<script type="text/javascript" src="assets/js/mdb.min.js"></script>
-	<!-- Initializations -->
-	<script type="text/javascript" src="assets/js/custom.js"></script>
-	<!-- data-table -->
-	<script type="text/javascript" src="assets/js/addons/datatables.min.js"></script>
-	<!-- owl Carousel -->
-	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 
-	<script src="compiled/flipclock.js"></script>	
 
 	<script src="assets/js/fullScreen.js" type="text/javascript"></script>
-	<script src="assets/js/par-js/countdown.js"></script>
-
 
 </body>
 </html>

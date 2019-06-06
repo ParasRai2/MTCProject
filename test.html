@@ -2,14 +2,88 @@
 <html>
 <head>
 	<title>hello</title>
-	<script src="assets/js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="assets/js/fullScreen.js"></script>
+	<style type="text/css">
+		html,body{width:100%;height:100%;margin:0;padding:0;}
+body{
+	background:lightblue  url(http://upload.wikimedia.org/wikipedia/commons/9/96/Cloudhoppers.jpg) no-repeat center;background-size:cover;}
+#alert{
+    position:absolute;
+    top:37.5%;bottom:37.5%;left:25%;right:25%;
+    background-color:lightblue;
+    border:1px solid black;
+    border-radius:8px;
+    box-shadow: 0 0 16px black;
+    -webkit-transition: all .25s cubic-bezier(0.52, 0.76, 0.52, 0.76);
+    -moz-transition: all .25s cubic-bezier(0.52, 0.76, 0.52, 0.76);
+    -o-transition: all .25s cubic-bezier(0.52, 0.76, 0.52, 0.76);
+    -ms-transition: all .25s cubic-bezier(0.52, 0.76, 0.52, 0.76);
+    transition: all .25s cubic-bezier(0.52, 0.76, 0.52, 0.76);
+}
+#alert:before{
+    display:block;
+    position:absolute;
+    top:0;bottom:0;left:0;right:0;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter:url(#blurLayer);
+    filter: blur(15px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
+    opacity: .9;
+    content:' ';
+    background:lightblue  url(http://upload.wikimedia.org/wikipedia/commons/9/96/Cloudhoppers.jpg) no-repeat fixed center;background-size:cover;
+}
+#alert>div{
+    position:absolute;
+    top:2em;bottom:.5em;left:.5em;right:.5em;
+    background-color:white;
+    border:1px solid gray;
+    padding:.5em;
+}
+#alert>div>h3{
+    margin:0;padding:0;position:absolute;
+    color:white;top:-1.5em;left:0;
+}
 
+#alert.close{
+    -webkit-transition: all .25s cubic-bezier(0.70, 0.50, 0.70, 0.50);
+    -moz-transition: all .25s cubic-bezier(0.70, 0.50, 0.70, 0.50);
+    -o-transition: all .25s cubic-bezier(0.70, 0.50, 0.70, 0.50);
+    -ms-transition: all .25s cubic-bezier(0.70, 0.50, 0.70, 0.50);
+    transition: all .25s cubic-bezier(0.70, 0.50, 0.70, 0.50);
+    opacity:0;
+    -webkit-transform:scale(0.95,0.9) translate(0, 0px);
+    -moz-transform:scale(0.95,0.9) translate(0, 0px);
+    -o-transform:scale(0.95,0.9) translate(0, 0px);
+    -ms-transform:scale(0.95,0.9) translate(0, 0px);
+    transform:scale(0.95,0.9) translate(0, 0px);
+}
+	</style>
+<script type="text/javascript">
+	document.body.onclick = function(){
+    document.getElementById('alert').classList.toggle('close');
+};
+</script>
 </head>
 <body>
-<script type="text/javascript">
-	
-				//toggleFullscreen();
-</script>
+
+	<p>Click anywhere to open or close alert!</p>
+<p>sorry. this feature can see well in webkit.</p>
+<div id='alert' class='close'>
+    <div>
+        <h3>Hello world</h3>
+        <div>
+            This is Aero Alert!
+        </div>
+    </div>
+</div>
+<svg:svg width="0" height="0">
+    <!-- Filter -->
+    <svg:filter id="blurLayer">
+         <!-- Blur and attributes -->
+         <svg:feGaussianBlur stdDeviation="15"/>
+    </svg:filter>
+</svg:svg>
 </body>
 </html>

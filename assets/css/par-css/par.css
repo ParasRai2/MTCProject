@@ -40,3 +40,24 @@
 	color: #662367;
     line-height: 50px;
 }
+
+
+.student-info
+{
+	box-shadow: 0px 0px 18px #662367;
+}
+
+.status{
+	border-radius: 12px;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+}
+.status.active{
+	border:  2px solid #00C851;
+	background-color: #00C851;
+}
+.status.inactive{
+	border:  2px solid #FF3547;
+	background-color: #FF3547;
+}

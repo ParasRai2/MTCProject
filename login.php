@@ -41,8 +41,7 @@
 	</div>
 	<div class="row mt-2">
 		<div class="container-fluid text-center" id="Login-Info">
-			ENTRANCE EXAMINATION<br>
-			LOGIN
+			ENTRANCE EXAMINATION
 		</div>
 	</div>
 
@@ -53,7 +52,7 @@
 				<div class="card">
 
 					<h5 class="card-header purple-bg white-text text-center py-4">
-						<strong>Contact us</strong>
+						<strong>Log In</strong>
 					</h5>
 
 					<!--Card content-->
