@@ -2,3 +2,13 @@
     height: 50px;
     padding-left: 20px;
 }
+#nav-clock {
+    zoom: 0.4;
+    -moz-transform: scale(0.4);
+}
+.questions{
+  padding: 15px;
+}
+.questions .col-md-8{
+  padding-right: 0px;
+}

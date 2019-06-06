@@ -13,5 +13,29 @@
 <script type="text/javascript" src="assets/js/addons/datatables.min.js"></script>
 <!-- owl Carousel -->
 <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<!-- flipclock -->
+<script src="compiled/flipclock.js"></script>
+
+<script type="text/javascript">
+  var clock;
+  var currentTime;
+  var startTime;
+  var diff;
+  $(document).ready(function() {
+    currentTime = new Date();
+    startTime = new Date("June 10, 2019 06:35:00");
+    diff = (startTime - currentTime)/1000;
+    clock = $('.clock').FlipClock( parseInt(diff), {
+          clockFace: 'MinuteCounter',
+          countdown: true,
+          callbacks: {
+            stop: function() {
+              $('.message').html('The clock has stopped!');
+            }
+          }
+      });
+  });
+
+</script>
 </body>
 </html>

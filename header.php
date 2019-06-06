@@ -18,19 +18,22 @@
   <!-- owl Carousel -->
   <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+  <!-- flipclock -->
+  <link rel="stylesheet" href="compiled/flipclock.css">
+  <!-- custom -->
   <link href="assets/css/custom.css" rel="stylesheet">
   <link href="assets/css/magnum-custom.css" rel="stylesheet">
 </head>
 <body>
   <!-- navigation bar start-->
-  <nav class="mb-1 navbar navbar-expand-lg avbar-light white double-nav scrolling-navbar">
+  <nav class="mb-1 navbar navbar-expand-lg navbar-dark secondary-color sticky-top lighten-1 purple-gradient">
     <img src="assets/images/logo_square.png" alt="" style="height:50px; padding-right:20px;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-5" aria-controls="navbarSupportedContent-5" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent-5">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link waves-effect waves-light" href="#">Home
             <span class="sr-only">(current)</span>
           </a>
@@ -41,7 +44,8 @@
       </ul>
       <ul class="navbar-nav ml-auto nav-flex-icons">
         <li class="nav-item">
-          <button type="button" class="btn btn-success btn-md waves-effect waves-light">Timer is here</button>
+          <div id="nav-clock" class="clock"></div>
+        	<div class="message"></div>
           </a>
         </li>
         <li class="nav-item">
