@@ -19,9 +19,8 @@ $(document).ready(function() {
 	        countdown: true,
 	        callbacks: {
 	        	stop: function() {
-	        		var url = "test.html";
-					//$(location).attr('href',url);
-
+	        		var url = "student-info.php";
+					$(location).prop('href',url);
 	        	}
 	        }
 	    });

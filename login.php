@@ -59,7 +59,7 @@
 					<div class="card-body px-lg-5 pt-0">
 
 						<!-- Form -->
-						<form class="text-center">
+						<form class="text-center" action="welcome-page.php">
 							<!-- Name -->
 				            <div class="md-form mt-4">
 				                <input type="text" id="materialSubscriptionFormName" class="form-control form-text-color">
