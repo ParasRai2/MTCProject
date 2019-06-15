@@ -68,7 +68,9 @@
 							</div>
 						</div>
 						<div class="container-fluid">
-							<button class="float-right btn btn-purple-color btn-rounded z-depth-0 my-4 waves-effect">Start</button>
+							<form action="index.php">
+								<button class="float-right btn btn-purple-color btn-rounded z-depth-0 my-4 waves-effect" type="submit">Start</button>
+							</form>
 						</div>
 					</div>
 
